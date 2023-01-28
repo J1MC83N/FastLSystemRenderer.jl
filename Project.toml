@@ -1,0 +1,13 @@
+name = "FastLSystemRenderer"
+uuid = "6d6bb40c-6d24-444a-ac48-5cd315c9a97c"
+authors = ["Jimmy Chen"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
