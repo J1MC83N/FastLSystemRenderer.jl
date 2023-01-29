@@ -67,6 +67,7 @@ Features TODOs:
 - [ ] Render to point set (without drawing lines) via old methods
 - [ ] Render with equalized axes (currently the axes scale ratio changes with given image dimension)
 - [ ] Switchable backend for matrix multiplication (currently uses Octavian.jl)
+- [ ] Night mode render - flipped color
 
 
 Limitations (that probably will stay for a good while):
