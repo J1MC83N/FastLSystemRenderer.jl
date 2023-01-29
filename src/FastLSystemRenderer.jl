@@ -571,7 +571,8 @@ function importrules(str::String)
     rules = Dict{U8,Seq}()
     equate_str = "\\s*(?:=|[=|-]>)\\s*"
     for line in split(str,'\n')
-        isempty(strip(line)) && continue
+        line = strip(line)
+        isempty(line) && continue
         line[1] == ';' && continue
         char, sub = strip(match(Regex("^([A-Z])$equate_str"),line).captures[1]), strip(match(Regex("$equate_str(.*)\\s*\$"),line).captures[1])
         @assert length(char) == 1
